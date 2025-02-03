@@ -1,0 +1,8 @@
+module verlet_list_mod
+    use miscellaneous_parameters_mod
+    use positions_mod, only : max_at
+    save
+    real(float_byte_size), parameter  ::  verlet_cutoff = 6.1d0 ! see potential parameters
+    integer(integer_byte_size), parameter  ::  maximum_neibors = 200
+    integer(integer_byte_size)  ::  verlet_list_length(max_at), verlet_list(max_at, maximum_neibors)
+endmodule verlet_list_mod
