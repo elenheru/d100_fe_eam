@@ -1,7 +1,0 @@
-module positions_mod
-    use miscellaneous_parameters_mod, only : float_byte_size, integer_byte_size
-    save
-    integer(integer_byte_size), parameter  ::  max_at = 160000
-    real(float_byte_size), dimension(3, max_at)  ::  R_at
-    integer(integer_byte_size)  ::  nat, nat_mc !elastic close far and main cell
-endmodule positions_mod

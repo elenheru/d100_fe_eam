@@ -1,6 +1,7 @@
-!/sources**/*f90
+!/sources
+*.f90E
+*.mod
 # backup*/
-# *f90E
 # *F90E
 # !*f90
 # !*F90
