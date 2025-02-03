@@ -1,0 +1,155 @@
+# depslib dependency file v1.0
+1736354875 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/main.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d1ed_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d1mf_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d1pw_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d2ed_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d2mf_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/d2pw_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/ed_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/mf_ack4pot.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_functions/pw_ack4pot.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/ackland4_approximation_arrays_mod.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/physical_parameters_mod.f90
+
+1736349243 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/positions_mod.f90
+
+1736217218 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/potentials_ackland4fefe_linear_mod.f90
+
+1736342684 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/system_parameters_mod.f90
+
+1736353091 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/verlet_list_mod.f90
+
+1737576109 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/wo_storage_mod.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_kinetic_energy.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/ackland4_parameters_mod.f90
+
+1736115002 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_energy_at.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_pseudosystem_energy.f90
+
+1736354971 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_system_energy.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/find_centeral_atom.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/find_far_atom.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/initiate_energetic_parameters.f90
+
+1735593005 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/initiate_energetic_parameters_tricky.f90
+
+1736354897 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/obtain_verlet_list.f90
+
+1736277273 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/place_atoms_bcc.f90
+
+1736271532 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/place_atoms_bcc_spheric.f90
+
+1736115002 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/place_atoms_fcc.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_fine.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_fine_quad_grad_rand.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_orth_quad_grad_rand.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_orthogonal_randomized.f90
+
+1736115044 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_rude.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/relax_rude_quad_grad_rand.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/shift_atom.f90
+
+1735593005 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/wo_an_ed.f90
+
+1735593005 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/wo_an_mf.f90
+
+1735593005 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/wo_an_pw.f90
+
+1736084455 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/wo_xyz_snapshot.f90
+
+1736201889 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_atom_gradient.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_atom_relax_bcc.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_atom_relax_fcc.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_derivatives.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_different_relaxations_bcc.f90
+
+1736115002 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_far_atom_gradient.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_lattice_parameter1.f90
+
+1736212857 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_lattice_parameter2.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_lattice_parameter3.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_lattice_parameter4.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_linear_approximation_of_potentials.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_po_value_potential.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_vacancy_relax_bcc.f90
+
+1736202212 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_verlet_list.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_wo_values_la.f90
+
+1736119538 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/miscellaneous_parameters_mod.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_writeout_subroutines/wo_an_ed.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_writeout_subroutines/wo_an_mf.f90
+
+1736115185 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_writeout_subroutines/wo_an_pw.f90
+
+1737570370 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_writeout_subroutines/wo_xyz_snapshot.f90
+
+1736355748 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_system_energy_verlet.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/set_seed_of_random_numbers.f90
+
+1735943021 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/zones_mod.f90
+
+1736084867 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_writeout_snapshot.f90
+
+1736354838 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/compile_debug_options_mod.f90
+
+1736355634 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_force_atom_direct.f90
+
+1736356444 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/calculate_force_atom_verlet.f90
+
+1736172775 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/electronic_densities_allocated_mod.f90
+
+1736173293 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/allocate_electronic_densities.f90
+
+1736722743 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_field_work.f90
+
+1736218053 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_tests/test_lattice_parameter5.f90
+
+1736260611 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_inspection/inspection_system_energy_wrong_change.f90
+
+1737578083 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/place_atoms_bcc_cylindric.f90
+
+1737575480 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/rotations_mod.f90
+
+1736722654 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_modules/periodicity_z_mod.f90
+
+1736796353 source:/home/alexey/Codes/fortran/PHd/dislocation/reconstruction/sources/folder_subroutines/place_atoms_bcc_cylindric_100010.f90
+

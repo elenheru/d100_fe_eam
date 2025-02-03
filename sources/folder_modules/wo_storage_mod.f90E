@@ -1,0 +1,10 @@
+module wo_storage_mod
+    use miscellaneous_parameters_mod, only : float_byte_size, integer_byte_size
+    use system_parameters_mod, only : a0bcc
+    save
+    integer(integer_byte_size)  ::  xyz_snapshot_counter
+    logical(1)  ::  show_single_z_plane
+    real(float_byte_size), parameter  ::  wo_z_boundary_start = -1d-1 * a0bcc
+    real(float_byte_size), parameter  ::  wo_z_boundary_end = 6d-1 * a0bcc
+    character(LEN = 24)  ::  xyz_filename = "01234567890123456789_-_-"
+endmodule wo_storage_mod
