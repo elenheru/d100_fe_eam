@@ -54,10 +54,10 @@ subroutine calculate_force_atom_verlet(number_atom, force)
     ! periodic boundary conditions, while it is implied in energy formula given in article.
     ! To be consistent we have to split elastic area into two parts, outer and and inner
     ! outer is adjacent to vacuum, and inner is adjacent to atoms of main cell.
-    ! Inner part is considered to be part of system in sence that its atoms embedding_function
+    ! Inner part is considered to be part of system in sense that its atoms embedding_function
     ! is required to be calculated for system energy, meanwhile for outer part
     ! such calculation is required only when the force is being calculated.
-    ! Inner elastic atoms are not allowed to move - this is the difference
+    ! Inner elastic atoms are not allowed to move - this makes difference
     ! from atoms in main computational cell.
     ! There exists a similar approach - to split main cell in two zones
     ! and then anchor atoms of its outer part.
@@ -79,8 +79,8 @@ subroutine calculate_force_atom_verlet(number_atom, force)
     enddo
     !there is a room for optimization - to store distances to verlet list atoms
     !this will save several negations mutiplications and squareroots
-    grad_num = - grad_num_t1 - grad_num_t2 - grad_num_t3 - grad_num_t4
-    force = grad_num
+    grad_num = grad_num_t1 + grad_num_t2 + grad_num_t3 + grad_num_t4
+    force = - grad_num
 
     if (debug_flag) then
         print 311, "Numerical g1", grad_num_t1
