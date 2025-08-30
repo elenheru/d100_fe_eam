@@ -4,6 +4,8 @@ module verlet_list_mod
     use positions_mod, only : max_at
     save
     real(float_byte_size), parameter :: verlet_cutoff = cutoff_pw + 0.1
+    real(float_byte_size), parameter :: &
+        reciprocal_verlet_cutoff = 1 / verlet_cutoff
     ! you may want to see potential parameters
     integer, parameter :: maximum_neibors = 200
     integer(integer_byte_size) :: verlet_list_length(max_at)

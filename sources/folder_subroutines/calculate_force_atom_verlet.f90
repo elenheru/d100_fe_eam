@@ -79,7 +79,7 @@ subroutine calculate_force_atom_verlet(number_atom, force)
     enddo
     !there is a room for optimization - to store distances to verlet list atoms
     !this will save several negations mutiplications and squareroots
-    grad_num = grad_num_t1 + grad_num_t2 + grad_num_t3 + grad_num_t4
+    grad_num = - (grad_num_t1 + grad_num_t2 + grad_num_t3 + grad_num_t4)
     force = - grad_num
 
     if (debug_flag) then

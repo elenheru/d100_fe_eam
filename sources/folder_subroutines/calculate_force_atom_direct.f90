@@ -55,7 +55,7 @@ subroutine calculate_force_atom_direct(number_atom, force)
         embeddin_deriv1(rho_at(i)) * edensity_deriv1(distance) * ( R_at(:, i) - R_at(:, number_atom) ) / distance
     enddo
 
-    grad_num = + grad_num_t1 + grad_num_t2 + grad_num_t3 + grad_num_t4
+    grad_num = - (grad_num_t1 + grad_num_t2 + grad_num_t3 + grad_num_t4)
     force = - grad_num
 
     if (debug_flag) then

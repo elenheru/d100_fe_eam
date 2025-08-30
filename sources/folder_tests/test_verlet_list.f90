@@ -14,10 +14,9 @@ subroutine test_verlet_list
     real(float_byte_size) :: energy_before_shift_verlet
     real(float_byte_size) :: energy_after_shift_verlet
 
-    real(float_byte_size), dimension(3) :: grad_num_t1, grad_num_t2, grad_num_t3, grad_num_t4, grad_num
     real(float_byte_size), dimension(3) :: shift, move
 
-    print*, "Testing verlet list for atoms "
+    print*, "Testing renewing verlet list for single atom "
     print*, "test procedure includes calculation of system energy in two ways"
     print*, "without verlet list and with it"
 
