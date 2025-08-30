@@ -8,18 +8,18 @@ subroutine calculate_force_atom_direct(number_atom, force)
     real(float_byte_size), intent(inout), dimension(3) :: force
     integer(integer_byte_size), intent(in) :: number_atom
 
-    real(float_byte_size), parameter :: shift_magnitude = 9d-3
+    real(float_byte_size), parameter :: shift_magnitude = 9e-3
     real(float_byte_size) :: distance
     real(float_byte_size), dimension(3) :: grad_num_t1, grad_num_t2, grad_num_t3, grad_num_t4, grad_num
     integer(integer_byte_size) i, j
 
-    rho_at = 0d0
+    rho_at = 0e0
 
-    grad_num = 0d0
-    grad_num_t1 = 0d0
-    grad_num_t2 = 0d0
-    grad_num_t3 = 0d0
-    grad_num_t4 = 0d0
+    grad_num = 0e0
+    grad_num_t1 = 0e0
+    grad_num_t2 = 0e0
+    grad_num_t3 = 0e0
+    grad_num_t4 = 0e0
 
     do i = 1, last_wall!_mc
         if (i .eq. number_atom) cycle

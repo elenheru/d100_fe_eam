@@ -6,13 +6,13 @@ subroutine test_field_work
     use compile_debug_options_mod, only : atom_of_interest
 
     implicit none
-    real(float_byte_size), parameter :: shift_magnitude = 1d-4
+    real(float_byte_size), parameter :: shift_magnitude = 1e-4_float_byte_size
     integer(integer_byte_size) :: nprobe
     real(float_byte_size) :: float_random
     real(float_byte_size) :: energy_before_shift
     real(float_byte_size) :: energy_after_shift
 
-    real(float_byte_size), dimension(3) :: force = 0d0
+    real(float_byte_size), dimension(3) :: force = 0e0_float_byte_size
     real(float_byte_size), dimension(3) :: shift
 
     print*, "Testing the fact that provided shift of atom is small "
@@ -33,7 +33,10 @@ subroutine test_field_work
         norm2(R_at(:, nprobe))
 
     call random_number(shift)
-    shift = ( 2d0*shift - (/1d0, 1d0, 1d0/) ) * shift_magnitude
+    shift = &
+        ( 2.0_float_byte_size * shift &
+        - (/1e0_float_byte_size, 1e0_float_byte_size, 1e0_float_byte_size/) ) &
+        * shift_magnitude
     !shift = ( 2d0*(/0.3, 0.7, 0.02/) - (/1d0, 1d0, 1d0/) ) * shift_magnitude
     print 301, "shift is ", shift
     !call inspection_system_energy_wrong_change
@@ -53,6 +56,8 @@ subroutine test_field_work
     ! Division by two is correct, because force is not constant along shift.
     ! It is linearly increasing as shfit increases,
     ! provided minima is quadratic.
+    ! Long story short - we are near to minima, so linear
+    ! approximation is guaranteed to be wrong
 
 
     call wo_xyz_snapshot(nprobe)

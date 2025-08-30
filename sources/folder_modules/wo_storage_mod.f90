@@ -28,4 +28,7 @@ module wo_storage_mod
     character(LEN = 3) :: periodic_atom = "Pd "
     character(LEN = 3) :: interesting_atom = "Au "
     !character(LEN = 24) :: xyz_filename = "01234567890123456789_-_-"
+    character(*), parameter :: format_m3x3 = &
+    '(42("-") / 3( ":", 1x, 3(ES12.5 ,1x) ":" /) 42("-") )'
+
 endmodule wo_storage_mod

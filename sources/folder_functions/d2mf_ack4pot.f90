@@ -3,5 +3,5 @@ real(float_byte_size) function d2mf_ack4pot(rho)
     implicit none
     real(float_byte_size), intent(in) :: rho
     !mf = embedding function
-    d2mf_ack4pot = ( 25d-2 / (rho*sqrt(rho)) ) + 2 * aphibi_ack4pot
+    d2mf_ack4pot = ( 25e-2 / (rho*sqrt(rho)) ) + 2 * aphibi_ack4pot
 endfunction d2mf_ack4pot

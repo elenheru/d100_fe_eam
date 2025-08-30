@@ -8,7 +8,7 @@ real(float_byte_size) function ed_ack4pot(r)
     intermediate = 0
     do i=1, 3
         intermediate = intermediate + &
-        apsi_ack4pot(i) * max( sign( 1d0, rpsi_ack4pot(i)-r ), 0d0 ) * (rpsi_ack4pot(i)-r)**3
+        apsi_ack4pot(i) * max( sign( 1e0_float_byte_size,rpsi_ack4pot(i)-r ), 0e0 ) * (rpsi_ack4pot(i)-r)**3
     enddo
     ed_ack4pot = intermediate
 endfunction ed_ack4pot

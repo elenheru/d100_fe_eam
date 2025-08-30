@@ -7,7 +7,7 @@ module      potentials_ackland4fefe_linear_mod
         implicit none
         real(float_byte_size), intent(in) :: r;real(float_byte_size) dist
         integer(integer_byte_size) intdistance
-        pairwise = 0d0
+        pairwise = 0e0
         dist = r*pairwise_recistep
         intdistance = floor(dist)
         if (intdistance .gt. pot_steps) intdistance = pot_steps - 1
@@ -21,7 +21,7 @@ module      potentials_ackland4fefe_linear_mod
         real(float_byte_size), intent(in) :: r
         real(float_byte_size) dist
         integer(integer_byte_size) intdistance
-        edensity = 0d0
+        edensity = 0e0
         dist = r*elecdens_recistep
         intdistance = floor(dist)
         if (intdistance .gt. pot_steps) intdistance = pot_steps - 1
@@ -35,7 +35,7 @@ module      potentials_ackland4fefe_linear_mod
         implicit none
         real(float_byte_size), intent(in) :: rho
         integer(integer_byte_size) rho_knot
-        embeddin = 0d0
+        embeddin = 0e0
         rho_knot = floor(rho * embefunc_recistep)
         if ( rho_knot .le. 0 ) rho_knot = 1
             if ( rho_knot .le. 0 ) rho_knot = 1
@@ -50,7 +50,7 @@ module      potentials_ackland4fefe_linear_mod
         real(float_byte_size), intent(in) :: r
         real(float_byte_size) dist
         integer(integer_byte_size) intdistance
-        pairwise_deriv1= 0d0
+        pairwise_deriv1= 0e0
         dist = r*pairwise_recistep
         intdistance = floor(dist)
         if (intdistance .ge. pot_steps) return
@@ -64,7 +64,7 @@ module      potentials_ackland4fefe_linear_mod
         implicit none
         real(float_byte_size), intent(in) :: r;real(float_byte_size) dist
         integer(integer_byte_size) intdistance
-        edensity_deriv1 = 0d0
+        edensity_deriv1 = 0e0
         dist = r*elecdens_recistep
         intdistance = floor(dist)
         if (intdistance .ge. pot_steps) return
@@ -78,8 +78,8 @@ module      potentials_ackland4fefe_linear_mod
         implicit none
         real(float_byte_size), intent(in) :: rho
         integer(integer_byte_size) rho_knot
-        embeddin_deriv1 = 0d0
-        if(rho .lt. 0d0) return
+        embeddin_deriv1 = 0e0
+        if(rho .lt. 0e0) return
         rho_knot = floor(rho*embefunc_recistep)
         if ( rho_knot .le. 0 ) rho_knot = 1
             ! dangerous errors for small
